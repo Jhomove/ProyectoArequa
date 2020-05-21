@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-superior{
+    width: 100%;
+    height: 50px;
+    background: #EE3556;
+    display: flex;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-icon{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.section-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.section-login-logup{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto;
+    margin-right: 10px;
+    align-content: center;
+    flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo{
+    width: 110px;
+    height: 35px;
+}
+
+.input-search{
+    width: 100%;
+    height: 33px;
+    padding: 12px 20px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-login{
+    width: 100px;
+    height: 35px;
+    background: none;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
 }
