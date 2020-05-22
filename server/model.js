@@ -19,20 +19,29 @@ const announcements = new Schema({
         title        : String,
         description  : String,
         img          : String,
-        author       : String,
+        author       : {
+            name  : String,
+            email : String
+        },
         created      : Date
 })
 
-const content = new Schema({
+const course = new Schema({
     title        : String,
     sections     : Array,
-    author       : String,
     created      : Date,
-    rating       : Number
+    author       : {
+        name  : String,
+        email : String
+    },
+    rating : {
+        type    : Number,
+        default : 0
+    }
 })
 
 module.exports = {
-        User          : mongoose.model('user', user),
-        Announcements : mongoose.model('announcements', announcements),
-        Content       : mongoose.model('content', content),
+    User          : mongoose.model('user', user),
+    Announcements : mongoose.model('announcements', announcements),
+    Course        : mongoose.model('course', course),
 }
