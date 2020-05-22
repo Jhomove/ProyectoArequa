@@ -1,11 +1,25 @@
 {
-  "name": "server",
+  "name": "arequa",
   "version": "1.0.0",
-  "description": "Back Arequa ",
-  "main": "index.js",
+  "description": "Hackathon AUNAR",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "AunarDeveloperGroup",
-  "license": "ISC"
+  "keywords": [
+    "Educacion",
+    "online",
+    "comunidad",
+    "node",
+    "react"
+  ],
+  "author": "Oscar Sandoval",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "md5": "^2.2.1",
+    "mongoose": "^5.9.15"
+  }
 }
