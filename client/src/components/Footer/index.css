@@ -1,0 +1,33 @@
+.footer-about{
+    border-top: 1px solid #EE3556;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-about  ul{
+    list-style-type: none;
+}
+
+.footer-about li{
+    margin-top: 10px;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 100px;
+    background-color: #EE3556;
+    color: #fff;
+}
+
+.footer-copyright div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}

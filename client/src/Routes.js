@@ -9,12 +9,17 @@ import NotFound from './components/NotFound';
 import Home from './containers/Home';
 import MenuSuperior from './components/MenuSuperior';
 
+//Providers
+import StateProviderLogin from './containers/Login/store';
+
 const AppRoutes = () => (
     <BrowserRouter>
-        <div className="main-container">
-            <MenuSuperior/>
-            <Route exact path="/" component={Home} />
-        </div>
+        <StateProviderLogin>
+            <div className="main-container">
+                <MenuSuperior/>
+                <Route exact path="/" component={Home} />
+            </div>
+        </StateProviderLogin>
         {/* <Route component={NotFound} /> */}
     </BrowserRouter>
 )

@@ -1,0 +1,101 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-mail{
+    position:fixed;
+    background: white;
+    width: 450px;
+    height: 100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.card-login{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card-login-header{
+    flex: 0.5;
+    border-bottom: 1px solid #C4C4C4;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-login-header-title{
+    flex: 11;
+}
+
+.card-login-header-close{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.card-login-container{
+    flex: 4;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.card-login-footer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.input-form{
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.redes-sociales{
+    flex: 1;
+    height: 50%;
+}
+
+.form{
+    flex: 1;
+    height: 50%;
+}
+
+.btn-login-2{
+    width: 100%;
+    height: 50px;
+    background: #4287F5;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.link{
+    color: #182AD2;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-none{
+    background: none;
+    border: none;
+    height: 100%;
+}
