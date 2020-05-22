@@ -1,5 +1,5 @@
 //Dependencies
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 //Components
 import About from '../About';
@@ -8,9 +8,13 @@ import SectionWithoutIcon from '../SectionWithoutIcon';
 
 //Css
 import './index.css';
+import { ContextLogin } from '../../containers/Login/store';
 
 
 const Footer = props => {
+
+    const { login, dispatchLogin } = useContext(ContextLogin);
+
     const listAboutSectionOne = [
         {
             text: 'Comparte tu conocimiento en arequa'
@@ -37,10 +41,14 @@ const Footer = props => {
             text: 'Mapa del sitio'
         }
     ]
+
+    useEffect(() => {
+        console.log("login----->",login.length)
+    })
     return (
-        <div>
+        <div style={props.style}>
             {
-                props.isLogin ? null : (
+                login.length === 0 || login[0].login ? null : (
                     <About class="footer-about">
                         <SectionWithoutIcon list={listAboutSectionOne}/>
                         <SectionWithoutIcon list={listAboutSectionTwo}/>

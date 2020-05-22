@@ -1,5 +1,5 @@
 //Dependencies
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 
 //Components
 import Input from '../Input';
@@ -12,9 +12,25 @@ import Login from '../../containers/Login';
 //Context
 import { ContextLogin } from '../../containers/Login/store';
 
-const MenuSuperior = () => {
+//Styles
+
+const Styles = {
+    circlePerfil: {
+        width: 40,
+        height: 40,
+        background: '#C4C4C4',
+        borderRadius: '50%',
+        margin: 5
+    }
+}
+
+const MenuSuperior = props => {
     const [ isLogin, setIsLogin ] = useState(false);
     const { login, dispatchLogin } = useContext(ContextLogin);
+
+    useEffect(() => {
+        console.log("login",login === "")
+    })
 
     const handleOpenModal = type => event => {
         let data = {};
@@ -40,19 +56,23 @@ const MenuSuperior = () => {
         }
     }
     return (
-        <div className="menu-superior">
+        <div className="menu-superior" style={props.style}>
             <section className="section-icon">
                 <img className="logo" src={Arequa} alt="logo"/>
             </section>
             {
-                isLogin ? null :(
+                login.length === 0 ? null :(
                     <section className="section-search">
                         <Input class="input-search" icon="" text="Buscar cursos"/>
                     </section>
                 )
             }
             {
-                isLogin ? null : (
+                login.length === 0 ? (
+                    <div style={Styles.circlePerfil}>
+
+                    </div>
+                ) : (
                     <section className="section-login-logup">
                         <Button class="btn-login" icon="" text="Iniciar sesión" function={handleOpenModal('login')}/>
                         <Button class="btn-login" icon="" text="Registrarse" function={handleOpenModal('logup')}/>

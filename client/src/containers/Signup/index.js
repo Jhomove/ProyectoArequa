@@ -4,6 +4,7 @@ import Modal from '../../components/Modal';
 import Input from '../../components/Input';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
+import Clip from '../../img/clip-de-papel.png';
 
 const Signup = props => {
     const { login, dispatchLogin } = useContext(ContextLogin);

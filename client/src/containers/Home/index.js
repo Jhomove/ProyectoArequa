@@ -22,7 +22,6 @@ const Home = () => {
             <Section class={{seciontCard: "section-card", icon: "section-card-icon", content: "section-card-content", title: "section-card-title", text: "section-card-text"}} title="Título de prueba" paragraph={text} icon={IconDefault}/>
             <Section class={{seciontCard: "section-card", icon: "section-card-icon", content: "section-card-content", title: "section-card-title", text: "section-card-text"}} title="Título de prueba" paragraph={text} icon={IconDefault}/>
             <Section class={{seciontCard: "section-card", icon: "section-card-icon", content: "section-card-content", title: "section-card-title", text: "section-card-text"}} title="Título de prueba" paragraph={text} icon={IconDefault}/>
-            <Footer isLogin={isLogin}/>
             <Login/>
             <Signup/>
         </div>
