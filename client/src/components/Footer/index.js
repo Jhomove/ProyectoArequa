@@ -8,12 +8,12 @@ import SectionWithoutIcon from '../SectionWithoutIcon';
 
 //Css
 import './index.css';
-import { ContextLogin } from '../../containers/Login/store';
+import { GlobalContext } from '../../containers/Login/store';
 
 
 const Footer = props => {
 
-    const { login, dispatchLogin } = useContext(ContextLogin);
+    const { globalState, globalDispatch } = useContext(GlobalContext);
 
     const listAboutSectionOne = [
         {
@@ -45,7 +45,7 @@ const Footer = props => {
     return (
         <div style={props.style}>
             {
-                login.length === 0 || login[0].login ? null : (
+                0 ? null : (
                     <About class="footer-about">
                         <SectionWithoutIcon list={listAboutSectionOne}/>
                         <SectionWithoutIcon list={listAboutSectionTwo}/>

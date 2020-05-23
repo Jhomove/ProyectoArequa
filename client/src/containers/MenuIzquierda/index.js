@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ContextLogin } from '../Login/store';
+import { GlobalContext } from '../Login/store';
 import Button from '../../components/Button';
 import { Link } from 'react-router-dom';
 
@@ -30,7 +30,7 @@ const Styles = {
 }
 
 const MenuIzquierda = () => {
-    const { login, dispatchLogin } = useContext(ContextLogin);
+    const { login, dispatchLogin } = useContext(GlobalContext);
     // return login.length > 0 &&  login[0].login ? 
     return login.length === 0 ||  login[0].login ? 
     (

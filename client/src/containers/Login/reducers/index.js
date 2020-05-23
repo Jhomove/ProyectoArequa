@@ -1,10 +1,7 @@
-const loginReducer = (state,action) => {
+const loginReducer = (state, action) => {
     switch (action.type) {
         case "OPEN-LOGIN":
-            return [
-                action.data,
-            ]
-            break;
+            return action
         default:
             break;
     }

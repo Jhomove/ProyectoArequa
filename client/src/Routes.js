@@ -25,7 +25,9 @@ const Styles = {
         flexDirection: 'column',
     },
     menuSuperior: {
-        flex: 1
+        flex: 1,
+        paddingTop: 10,
+        paddingBottom: 10
     },
     mainContainer: {
         flex: 10,
