@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6344fc20-34af-4e7a-b9cb-1dff3f353ef2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/css/ABeeZee.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Roboto.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fontawesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylehome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylelog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/facebook-square-brands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/google-brands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/android/drawable-hdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/android/drawable-ldpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/android/drawable-mdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/android/drawable-xhdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/android/drawable-xxhdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/android/drawable-xxxhdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-50@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-72@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-small@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon-small@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/ios/icon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Square150x150Logo.scale-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Square150x150Logo.scale-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Square30x30Logo.scale-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Square310x310Logo.scale-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Square44x44Logo.scale-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Square44x44Logo.scale-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Square70x70Logo.scale-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Square71x71Logo.scale-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Square71x71Logo.scale-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/StoreLogo.scale-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/StoreLogo.scale-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Wide310x150Logo.scale-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/windows/Wide310x150Logo.scale-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/wp8/ApplicationIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/icon/wp8/Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-land-hdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-land-ldpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-land-mdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-land-xhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-land-xxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-land-xxxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-port-hdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-port-ldpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-port-mdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-port-xhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-port-xxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/android/drawable-port-xxxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default-568h@2x~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default-667h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default-736h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default-Landscape-736h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default-Landscape@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default-Landscape~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default-Portrait@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default-Portrait~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default@2x~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/ios/Default~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/windows/SplashScreen.scale-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/windows/SplashScreenPhone.scale-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/screen/wp8/screen-portrait.jpg" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1cJSo4TPS6yYT4w9dEeW28jpCN3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6344fc20-34af-4e7a-b9cb-1dff3f353ef2" name="Default Changelist" comment="" />
+      <created>1590245374556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590245374556</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
