@@ -28,10 +28,6 @@ const MenuSuperior = props => {
     const [ isLogin, setIsLogin ] = useState(false);
     const { login, dispatchLogin } = useContext(ContextLogin);
 
-    useEffect(() => {
-        console.log("login",login === "")
-    })
-
     const handleOpenModal = type => event => {
         let data = {};
         switch (type) {

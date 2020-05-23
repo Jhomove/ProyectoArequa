@@ -3,7 +3,7 @@ import React from 'react';
 
 const Input = props => {
     return (
-        <input style={props.style} className={props.class} placeholder={props.text}/>
+        <input name={props.name} style={props.style} className={props.class} placeholder={props.text} onChange={props.onChange} value={props.value === null || props.value === '' ? '' : props.value}/>
     );
 }
 

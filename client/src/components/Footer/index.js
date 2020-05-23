@@ -41,10 +41,7 @@ const Footer = props => {
             text: 'Mapa del sitio'
         }
     ]
-
-    useEffect(() => {
-        console.log("login----->",login.length)
-    })
+    
     return (
         <div style={props.style}>
             {

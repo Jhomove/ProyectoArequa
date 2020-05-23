@@ -16,7 +16,6 @@ const Login = props => {
     const { login, dispatchLogin } = useContext(ContextLogin);
 
     const handleLogin = event => {
-        console.log("hola")
     }
 
     const handleClose = event => {

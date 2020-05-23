@@ -15,7 +15,8 @@ import CreateContent from './containers/CreateContent';
 import MenuIzquierda from './containers/MenuIzquierda';
 
 //Providers
-import StateProviderLogin from './containers/Login/store';
+import StateProviderLogin, { ContextLogin } from './containers/Login/store';
+import StateProviderContentStudy from './containers/CreateContent/store';
 
 //Styles
 const Styles = {
@@ -36,19 +37,22 @@ const Styles = {
     }
 }
 
-const AppRoutes = () => {    
+const AppRoutes = () => {
+    // const { login, dispatchLogin } = useContext(ContextLogin);
     return (
         <BrowserRouter>
             <StateProviderLogin>
-                <div style={Styles.containerGeneral}>
-                    <MenuSuperior style={Styles.menuSuperior}/>
-                    <div style={Styles.mainContainer}>
-                        <MenuIzquierda/>
-                        <Route exact path="/" component={Home} />
-                        <Route path="/crear-contenido" component={CreateContent} />
+                <StateProviderContentStudy>
+                    <div style={Styles.containerGeneral}>
+                        <MenuSuperior style={Styles.menuSuperior}/>
+                        <div style={Styles.mainContainer}>
+                            <MenuIzquierda/>
+                            <Route exact path="/" component={Home} />
+                            <Route path="/crear-contenido" component={CreateContent} />
+                        </div>
+                        <Footer style={Styles.footer}/>
                     </div>
-                    <Footer style={Styles.footer}/>
-                </div>
+                </StateProviderContentStudy>
             </StateProviderLogin>
             {/* <Route component={NotFound} /> */}
         </BrowserRouter>

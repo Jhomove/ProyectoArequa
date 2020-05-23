@@ -39,18 +39,12 @@ const style = {
 }
 
 const InputFile = props => {
-    const [ inputText, setInputText ] = useState('No se ha seleccionado un archivo.')
-
-    const handleChangeInput = event => {
-        const file = event.target.files[0].name
-        setInputText(file)
-    }
     return (
         <div>
-            <input style={style.inputFile} type="file" id={props.id} onChange={handleChangeInput}/>
+            <input name={props.name} style={style.inputFile} type="file" id={props.id} onChange={props.onChange} className={props.class}/>
             <label style={style.container} htmlFor={props.id}>
                 <div style={style.containerText}>
-                    <p style={style.textInput} id="texto-ruta">{inputText}</p>
+                    <p style={style.textInput} id="texto-ruta">{props.value === null || props.value === '' ? 'No se ha seleccionado un archivo.' : props.value}</p>
                 </div>
                 <div style={style.containerButton}>
                     <p style={{margin:'auto'}}>Seleccionar archivo</p>
