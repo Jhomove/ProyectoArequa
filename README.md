@@ -27,7 +27,7 @@ Arequa es una plataforma de uso libre donde se podrán reunir creadores de conte
 
 ## Móvil
 
-1. Para empezar a aprender sin límites, descarga nuestra aplicación móvil, y regístrate 
+1. Para empezar a aprender sin límites, descarga nuestra aplicación móvil desde https://drive.google.com/file/d/1RhhTCCclw8eddjOo7Z862I6EpE1tvSmn/view?usp=sharing, y regístrate 
 
 ![inicio de sesion](https://user-images.githubusercontent.com/53486695/82732458-f07cd700-9cd2-11ea-91e3-96d8cee0ed6a.png)
 
