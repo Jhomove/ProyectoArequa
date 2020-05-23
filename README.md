@@ -70,4 +70,5 @@ Para el deserrallo del proyecto se utilizó:
  
 ## Información adicional
 
-
+¿Por qué “Arequa” y no otro nombre? En la región en la que nos ubicamos, los llanos orientales de Colombia, se escucha mucho el lenguaje indígena, Arequa significa “Hato”; Un hato era una propiedad rural, un tipo de “hacienda”, que procuraba autoabastecerse, un  Hato  podía tener 1000 Hectáreas de extensión y  250.000 cabezas de ganado, con la posibilidad de aumentar sus terrenos y cabezas de ganado según la habilidad de sus trabajadores, pues existían ganados sin dueño  y la “Ley del llano” permitía que la persona que los enlazará y marcara en la oreja se convirtiera en su propietario.
+De la misma manera que un Hato, queremos que Arequa se empodere de usuarios que deseen educarse sobre la informática o herramientas del internet. Que sea una plataforma que pueda autoabastecerse de Contenidos útiles para todas las personas que requieran esta información.
