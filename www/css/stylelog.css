@@ -1,0 +1,19 @@
+.black{
+    color: #000;
+    border-color: #000;
+}
+
+#head{
+    background-color: #EE3556;
+    border-radius: 0 0 98% 0;
+    height: 35%;
+}
+
+h3{
+    font-family: ABeeZee;
+}
+
+.btn-rrss{
+    font-size: 15px;
+    width: 100%;
+}
