@@ -45,7 +45,7 @@ const Footer = props => {
     return (
         <div style={props.style}>
             {
-                0 ? null : (
+                globalState.logged ? null : (
                     <About class="footer-about">
                         <SectionWithoutIcon list={listAboutSectionOne}/>
                         <SectionWithoutIcon list={listAboutSectionTwo}/>

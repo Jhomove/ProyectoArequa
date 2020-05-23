@@ -30,9 +30,9 @@ const Styles = {
 }
 
 const MenuIzquierda = () => {
-    const { login, dispatchLogin } = useContext(GlobalContext);
+    const { globalState, globalDispatch } = useContext(GlobalContext);
     // return login.length > 0 &&  login[0].login ? 
-    return login.length === 0 ||  login[0].login ? 
+    return globalState.logged ? 
     (
         <div style={Styles.container}>
             <Button style={{...Styles.buttonSelected,marginTop: 10}} class="" icon="" text="Crear contenido"/>

@@ -46,7 +46,11 @@ const MenuSuperior = props => {
                 <img className="logo" src={Arequa} alt="logo"/>
             </section>
             <section className="section-search">
-                <Input class="input-search" icon="" text="Buscar cursos"/>
+                {
+                    !globalState.logged ? 
+                        <Input class="input-search" icon="" text="Buscar cursos"/>
+                    : null
+                }
             </section>
             {
                 globalState.logged ?
@@ -57,7 +61,6 @@ const MenuSuperior = props => {
                     <Button class="btn-login action-buttons" icon="" text="Registrarse" function={handleOpenModal('logup')}/>
                 </section>
             }
-        )
         </div>
     );
 }

@@ -33,8 +33,11 @@ const Login = props => {
         .then(res => res.json())
         .then((result) => {
             console.log(result)
-            globalDispatch({type: 'OPEN-LOGIN', logged: true})
             if(result.success) {
+                globalDispatch({type: 'OPEN-LOGIN', logged: true})
+                props.props.history.push('/crear-contenido');
+            } else {
+                globalDispatch({type: 'OPEN-LOGIN', logged: false})
             }
         },
         (error) => {
@@ -70,7 +73,7 @@ const Login = props => {
                     </div>
                     <div className="form">
                         <Input class="input-form user" text="Usuario"/>
-                        <Input class="input-form pass" text="Contraseña"/>
+                        <Input class="input-form pass" type="password" text="Contraseña"/>
                     </div>
                 </section>
                 <section className="card-login-footer">

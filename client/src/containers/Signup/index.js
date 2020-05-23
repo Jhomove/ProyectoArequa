@@ -9,8 +9,40 @@ import Clip from '../../img/clip-de-papel.png';
 const Signup = props => {
     const { globalState, globalDispatch } = useContext(GlobalContext);
 
+    
     const handleSignup = event => {
+        //cambiar a sintaxis de react y hacer validaciones
+        const   username = document.getElementsByClassName('user')[0].value,
+                pass     = document.getElementsByClassName('pass')[0].value,
+                email    = document.getElementsByClassName('email')[0].value
 
+        fetch("http://localhost:3100/register", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email    : email,
+                name     : username,
+                password : pass
+            })
+        })
+        .then(res => res.json())
+        .then((result) => {
+            console.log(result)
+            globalDispatch({type: 'OPEN-LOGIN', logged: true})
+            if(result.success) {
+                if(result.success) {
+                    globalDispatch({type: 'OPEN-LOGIN', logged: true})
+                    props.props.history.push('/crear-contenido');
+                } else {
+                    globalDispatch({type: 'OPEN-LOGIN', logged: false})
+                }
+            }
+        },
+        (error) => {
+            console.log('Error', error)
+        })
     }
 
     const handleClose = event => {
@@ -40,9 +72,9 @@ const Signup = props => {
 
                     </div>
                     <div className="form">
-                        <Input class="input-form" text="Email"/>
-                        <Input class="input-form" text="Nombre completo"/>
-                        <Input class="input-form" text="Contraseña"/>
+                        <Input class="input-form email" text="Email"/>
+                        <Input class="input-form user" text="Nombre completo"/>
+                        <Input class="input-form pass" type="password" text="Contraseña"/>
                     </div>
                 </section>
                 <section className="card-login-footer">
