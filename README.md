@@ -13,3 +13,4 @@ Arequa es una plataforma de uso libre donde se podrán reunir creadores de conte
 
 ### Plataforma web
 
+![Captura de pantalla de 2020-05-23 08-37-44](https://user-images.githubusercontent.com/43015087/82732127-e8bc3300-9cd0-11ea-859e-233c388cb614.png)
