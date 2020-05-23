@@ -10,7 +10,7 @@ import Arequa from '../../img/arequa.png';
 import Login from '../../containers/Login';
 
 //Context
-import { ContextLogin } from '../../containers/Login/store';
+import { GlobalContext } from '../../containers/Login/store';
 
 //Styles
 
@@ -25,60 +25,39 @@ const Styles = {
 }
 
 const MenuSuperior = props => {
-    const [ isLogin, setIsLogin ] = useState(false);
-    const { login, dispatchLogin } = useContext(ContextLogin);
-
-    useEffect(() => {
-        console.log("login",login === "")
-    })
+    const { globalState, globalDispatch } = useContext(GlobalContext);
 
     const handleOpenModal = type => event => {
-        let data = {};
         switch (type) {
             case 'login':
-                data = {
-                    login: false,
-                    openLogin: true,
-                    openSignup: false
-                }
-                dispatchLogin({type: 'OPEN-LOGIN',data: data});
+                globalDispatch({type: 'OPEN-LOGIN', openLogin: true})
                 break;
             case 'logup':
-                data = {
-                    login: false,
-                    openLogin: false,
-                    openSignup: true
-                }
-                dispatchLogin({type: 'OPEN-LOGIN',data: data});
+                globalDispatch({type: 'OPEN-LOGIN', openSignup: true})
                 break;
             default:
                 break;
         }
     }
+    console.log(globalState)
     return (
         <div className="menu-superior" style={props.style}>
             <section className="section-icon">
                 <img className="logo" src={Arequa} alt="logo"/>
             </section>
+            <section className="section-search">
+                <Input class="input-search" icon="" text="Buscar cursos"/>
+            </section>
             {
-                login.length === 0 ? null :(
-                    <section className="section-search">
-                        <Input class="input-search" icon="" text="Buscar cursos"/>
-                    </section>
-                )
+                globalState.logged ?
+                <div style={Styles.circlePerfil}></div>
+                : 
+                <section className="section-login-logup">
+                    <Button class="btn-login action-buttons" icon="" text="Iniciar sesión" function={handleOpenModal('login')}/>
+                    <Button class="btn-login action-buttons" icon="" text="Registrarse" function={handleOpenModal('logup')}/>
+                </section>
             }
-            {
-                login.length === 0 ? (
-                    <div style={Styles.circlePerfil}>
-
-                    </div>
-                ) : (
-                    <section className="section-login-logup">
-                        <Button class="btn-login" icon="" text="Iniciar sesión" function={handleOpenModal('login')}/>
-                        <Button class="btn-login" icon="" text="Registrarse" function={handleOpenModal('logup')}/>
-                    </section>
-                )
-            }
+        )
         </div>
     );
 }

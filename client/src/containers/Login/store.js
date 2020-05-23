@@ -1,15 +1,18 @@
 import React, { createContext, useReducer } from 'react';
-import loginReducer from './reducers';
+import reducer from './reducers';
 
-export const ContextLogin = createContext();
+export const GlobalContext = createContext();
 
 const StateProviderLogin = props => {
-    const [ login, dispatchLogin ]  = useReducer(loginReducer,"");
-
+    const [ globalState, globalDispatch ]  = useReducer(reducer, {
+        logged: false,
+        openLogin: false,
+        openSignup: false
+    });
     return (
-        <ContextLogin.Provider value={{ login, dispatchLogin }}>
+        <GlobalContext.Provider value={{ globalState, globalDispatch }}>
             {props.children}
-        </ContextLogin.Provider>
+        </GlobalContext.Provider>
     )
 }
 

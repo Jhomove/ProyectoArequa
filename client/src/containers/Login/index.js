@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Modal from '../../components/Modal';
 
 //Context
-import { ContextLogin } from './store';
+import { GlobalContext } from './store';
 
 //Css
 import './index.css';
@@ -13,31 +13,45 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 const Login = props => {
-    const { login, dispatchLogin } = useContext(ContextLogin);
+    const { globalState, globalDispatch } = useContext(GlobalContext);
 
     const handleLogin = event => {
-        console.log("hola")
+        //cambiar a sintaxis de react y hacer validaciones
+        const   username = document.getElementsByClassName('user')[0].value,
+                pass     = document.getElementsByClassName('pass')[0].value
+
+        fetch("http://localhost:3100/login", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email    : username,
+                password : pass
+            })
+        })
+        .then(res => res.json())
+        .then((result) => {
+            console.log(result)
+            globalDispatch({type: 'OPEN-LOGIN', logged: true})
+            if(result.success) {
+            }
+        },
+        (error) => {
+            console.log('Error', error)
+        })
     }
 
     const handleClose = event => {
-        const data = {
-            login: false,
-            openLogin: false,
-            openSignup: false
-        }
-        dispatchLogin({type: 'OPEN-LOGIN', data: data})
+        globalDispatch({type: 'OPEN-LOGIN', openLogin: false})
     }
 
     const handleOpen = event => {
-        const data = {
-            login: false,
-            openLogin: false,
-            openSignup: true
-        }
-        dispatchLogin({type: 'OPEN-LOGIN', data: data})
+        globalDispatch({type: 'OPEN-LOGIN', openLogin: true})
     }
 
-    return login[0] !== undefined && login[0].openLogin ? (
+    console.log('<<<', globalState)
+    return globalState.openLogin ? (
         <Modal>
             <div className="card-login">
                 <section className="card-login-header">
@@ -55,8 +69,8 @@ const Login = props => {
 
                     </div>
                     <div className="form">
-                        <Input class="input-form" text="Usuario"/>
-                        <Input class="input-form" text="Contraseña"/>
+                        <Input class="input-form user" text="Usuario"/>
+                        <Input class="input-form pass" text="Contraseña"/>
                     </div>
                 </section>
                 <section className="card-login-footer">

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ContextLogin } from '../Login/store';
+import { GlobalContext } from '../Login/store';
 import Modal from '../../components/Modal';
 import Input from '../../components/Input';
 import { Link } from 'react-router-dom';
@@ -7,31 +7,22 @@ import Button from '../../components/Button';
 import Clip from '../../img/clip-de-papel.png';
 
 const Signup = props => {
-    const { login, dispatchLogin } = useContext(ContextLogin);
+    const { globalState, globalDispatch } = useContext(GlobalContext);
 
     const handleSignup = event => {
 
     }
 
     const handleClose = event => {
-        const data = {
-            login: false,
-            openLogin: false,
-            openSignup: false
-        }
-        dispatchLogin({type: 'OPEN-LOGIN', data: data})
+        globalDispatch({type: 'OPEN-LOGIN', openSignup: false})
     }
 
     const handleOpen = event => {
-        const data = {
-            login: false,
-            openLogin: true,
-            openSignup: false
-        }
-        dispatchLogin({type: 'OPEN-LOGIN', data: data})
+        globalDispatch({type: 'OPEN-LOGIN', openSignup: true})
     }
 
-    return login[0] !== undefined && login[0].openSignup ? (
+
+    return globalState.openSignup ? (
         <Modal>
             <div className="card-login">
                 <section className="card-login-header">

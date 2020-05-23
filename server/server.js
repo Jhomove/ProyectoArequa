@@ -7,6 +7,6 @@ const   express    = require('express'),
 app.use(bodyParser.json())
 app.use(cors())
 app.use(router)
-app.listen(3000)
-console.log('[__server__] Servidor corriendo en puerto 3000')
+app.listen(3100)
+console.log('[__server__] Servidor corriendo en puerto 3100')
         
